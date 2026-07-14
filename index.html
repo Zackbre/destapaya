@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DESTAPA YA ofrece destape de drenajes, sanitarios, lavabos, regaderas, registros, líneas pluviales e inspección con cámara en Monterrey, Cumbres, Lincoln, Mitras y zonas cercanas.">
+  <meta name="theme-color" content="#061a3a">
+  <title>DESTAPA YA | Destape de drenajes en Monterrey</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#061a3a; --navy2:#0b2e64; --blue:#0877e1; --cyan:#36b8ff;
+      --yellow:#ffc400; --green:#1fbd63; --soft:#f4f8fc;
+      --text:#12233a; --muted:#65758b; --line:#dbe6f1;
+      --shadow:0 22px 60px rgba(6,26,58,.16); --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.55;overflow-x:hidden}
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1180px,92%);margin:auto}
+    h1,h2,h3{font-family:"Barlow Condensed",Arial,sans-serif;line-height:.95;margin:0}
+    h2{font-size:clamp(2.4rem,5vw,4.4rem);text-transform:uppercase;color:var(--navy)}
+    .section{padding:86px 0}
+    .soft{background:var(--soft)}
+    .dark{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff}
+    .eyebrow{display:inline-flex;gap:.55rem;align-items:center;color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:34px;height:3px;border-radius:4px;background:var(--yellow)}
+    .section-head{max-width:800px;margin-bottom:34px}
+    .section-head p{font-size:1.05rem;color:var(--muted)}
+    .dark .section-head h2,.dark .section-head p{color:#fff}
+
+    .topbar{background:var(--navy);color:#fff;padding:8px 0;font-size:.88rem}
+    .topbar .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+    nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(219,230,241,.9)}
+    .navin{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{width:210px;max-height:62px;object-fit:contain;object-position:left center}
+    .links{display:flex;align-items:center;gap:22px;font-size:.93rem;font-weight:750}
+    .links a:hover{color:var(--blue)}
+    .menu{display:none;border:0;background:none;font-size:1.7rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:14px 20px;border-radius:12px;border:0;font-weight:800;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-wa{background:var(--green);color:#fff;box-shadow:0 12px 28px rgba(31,189,99,.25)}
+    .btn-yellow{background:var(--yellow);color:var(--navy);box-shadow:0 12px 28px rgba(255,196,0,.25)}
+
+    .hero{min-height:720px;display:flex;align-items:center;background:
+      radial-gradient(circle at 84% 16%,rgba(54,184,255,.18),transparent 28%),
+      linear-gradient(110deg,#fff 0%,#fff 48%,#edf7ff 100%);overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:560px;height:560px;border:95px solid rgba(8,119,225,.10);border-radius:50%;right:-190px;bottom:-220px}
+    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;z-index:2}
+    h1{font-size:clamp(3.8rem,8vw,6.8rem);text-transform:uppercase;color:var(--navy);letter-spacing:-.02em}
+    h1 span{color:var(--blue)}
+    .hero p{font-size:1.15rem;color:#334155;max-width:680px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+    .chip{background:#fff;border:1px solid var(--line);padding:10px 14px;border-radius:999px;font-size:.88rem;font-weight:750;box-shadow:0 9px 24px rgba(6,26,58,.07)}
+    .hero-media{min-height:545px;border-radius:32px;overflow:hidden;position:relative;box-shadow:var(--shadow);background:#0b2e64}
+    .hero-media img{width:100%;height:100%;object-fit:cover}
+    .hero-overlay{position:absolute;inset:auto 22px 22px 22px;background:rgba(6,26,58,.88);backdrop-filter:blur(10px);color:#fff;border:1px solid rgba(255,255,255,.16);padding:20px;border-radius:18px}
+    .hero-overlay strong{font-family:"Barlow Condensed";font-size:2rem;color:var(--yellow)}
+
+    .trustbar{margin-top:-36px;position:relative;z-index:5}
+    .trustgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;background:#fff;border-radius:22px;padding:18px;box-shadow:var(--shadow);border:1px solid var(--line)}
+    .trust{display:flex;gap:12px;align-items:center;padding:12px}
+    .trust i{font-style:normal;font-size:1.8rem}.trust b{display:block;color:var(--navy)}
+
+    .grid{display:grid;gap:22px}
+    .services{grid-template-columns:repeat(3,1fr)}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:0 12px 34px rgba(6,26,58,.07);transition:.2s}
+    .card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .icon{width:58px;height:58px;border-radius:17px;background:linear-gradient(145deg,#eaf4ff,#fff);border:1px solid #cfe5fb;display:grid;place-items:center;font-size:1.9rem;margin-bottom:16px}
+    .card h3{font-size:1.7rem;text-transform:uppercase;color:var(--navy)}
+    .card p{color:var(--muted)} .mini{font-weight:800;color:var(--blue)}
+
+    .feature{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+    .feature-photo{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);min-height:520px;background:#10213d}
+    .feature-photo img{width:100%;height:100%;object-fit:cover}
+    .checklist{display:grid;gap:14px;margin-top:24px}
+    .check{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);padding:16px;border-radius:16px}
+    .check span{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:#e8fff1;color:var(--green);font-weight:900;flex:0 0 auto}
+
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .stat{padding:24px 18px;text-align:center;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14)}
+    .stat strong{display:block;color:var(--yellow);font-size:2rem}.stat small{color:#dbeafe}
+
+    .gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
+    .main-photo,.small-photo{border-radius:24px;overflow:hidden;position:relative;box-shadow:var(--shadow);background:#dbeafe}
+    .main-photo{min-height:470px}.small-photo{min-height:224px}
+    .gallery img{width:100%;height:100%;object-fit:cover}
+    .stack{display:grid;gap:22px}
+    .label{position:absolute;left:18px;bottom:18px;background:rgba(6,26,58,.88);color:#fff;padding:12px 15px;border-radius:12px;font-weight:800}
+
+    .findings{grid-template-columns:repeat(3,1fr)}
+    .finding-img{height:250px;border-radius:18px;overflow:hidden;margin-bottom:16px;background:#ddd}
+    .finding-img img{width:100%;height:100%;object-fit:cover}
+
+    .testimonials{grid-template-columns:repeat(3,1fr)}
+    .stars{color:#f4b400;letter-spacing:.12em}
+    .quote{position:relative}
+    .quote:after{content:"“";position:absolute;right:20px;top:0;font-family:Georgia;font-size:5rem;color:#dbeafe}
+    .client{display:flex;gap:12px;align-items:center;margin-top:18px}
+    .avatar{width:46px;height:46px;border-radius:50%;background:#dbeafe;color:var(--blue);display:grid;place-items:center;font-weight:900}
+
+    .strip{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0}
+    .marquee{display:flex;gap:50px;width:max-content;animation:scroll 24s linear infinite}
+    .pill{min-width:170px;padding:12px 22px;border-radius:999px;background:#f8fafc;border:1px solid var(--line);font-weight:800;text-align:center;color:#64748b}
+    @keyframes scroll{to{transform:translateX(-50%)}}
+
+    .paygrid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+    .paybox{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+    .payments{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .payment{padding:12px 16px;border-radius:12px;background:#f8fafc;border:1px solid var(--line);font-weight:800}
+
+    .faq{max-width:900px;margin:auto}
+    details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:12px;box-shadow:0 8px 24px rgba(6,26,58,.05)}
+    summary{font-weight:800;cursor:pointer;color:var(--navy)}
+
+    .contact{display:grid;grid-template-columns:.82fr 1.18fr;gap:30px}
+    .contact-card{background:#fff;border-radius:24px;padding:28px;color:var(--text);box-shadow:var(--shadow)}
+    .form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .form input,.form select,.form textarea{width:100%;padding:14px 15px;border:1px solid #cbd5e1;border-radius:12px;font:inherit}
+    .form textarea{min-height:130px;resize:vertical;grid-column:1/-1}.full{grid-column:1/-1}
+    .contact-list{display:grid;gap:14px;margin-top:22px}.contact-row{display:flex;gap:12px;align-items:flex-start}.contact-row b{display:block;color:#fff}
+
+    footer{background:#020b18;color:#cbd5e1;padding:48px 0 28px}
+    .footer{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:28px}
+    .footer-logo{width:240px;filter:drop-shadow(0 6px 18px rgba(0,0,0,.25))}
+    footer h3{font-size:1.5rem;text-transform:uppercase;color:#fff}
+    .social{display:flex;gap:10px;margin-top:16px}.social a{min-width:42px;height:42px;padding:0 14px;border-radius:999px;display:grid;place-items:center;background:#10213d;color:#fff;font-weight:900}
+    .legal{border-top:1px solid #1e293b;margin-top:28px;padding-top:20px;font-size:.86rem}
+    .float{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:1.7rem;z-index:120;box-shadow:0 16px 35px rgba(31,189,99,.35)}
+
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.visible{opacity:1;transform:none}
+
+    @media(max-width:960px){
+      .links{display:none;position:absolute;left:4%;right:4%;top:82px;background:#fff;flex-direction:column;align-items:flex-start;padding:20px;border-radius:16px;box-shadow:var(--shadow)}
+      .links.open{display:flex}.menu{display:block}
+      .hero-grid,.feature,.paygrid,.contact,.gallery{grid-template-columns:1fr}
+      .services,.testimonials,.findings{grid-template-columns:repeat(2,1fr)}
+      .trustgrid,.stats{grid-template-columns:repeat(2,1fr)}
+      .stack{grid-template-columns:1fr 1fr}
+      .hero{padding:60px 0}.hero-media{min-height:470px}
+    }
+    @media(max-width:640px){
+      .section{padding:64px 0}
+      .services,.testimonials,.findings,.footer{grid-template-columns:1fr}
+      .trustgrid,.stats{grid-template-columns:1fr 1fr}
+      .stack{grid-template-columns:1fr}
+      .form{grid-template-columns:1fr}.form textarea,.full{grid-column:auto}
+      h1{font-size:3.7rem}.hero-media{min-height:390px}
+      .topbar .container{justify-content:center;text-align:center}
+      .logo{width:175px}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Plumber",
+    "name":"DESTAPA YA",
+    "telephone":"+52 81 4136 8849",
+    "areaServed":["Monterrey","Cumbres","Lincoln","Mitras"],
+    "sameAs":["https://www.facebook.com/profile.php?id=61590117905234"],
+    "description":"Destape de drenajes, sanitarios, lavabos, regaderas, registros, líneas pluviales e inspección con cámara."
+  }
+  </script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>📍 Monterrey · Cumbres · Lincoln · Mitras y alrededores</span>
+      <span>💳 Efectivo · Débito · Crédito · Transferencia</span>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container navin">
+      <a href="#inicio"><img class="logo" src="assets/logo-oficial.png" alt="DESTAPA YA"></a>
+      <button class="menu" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
+      <div class="links" id="links">
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos reales</a>
+        <a href="#hallazgos">Lo que retiramos</a>
+        <a href="#testimonios">Reseñas</a>
+        <a href="#faq">Preguntas</a>
+        <a class="btn btn-wa" href="https://wa.me/528141368849?text=Hola,%20necesito%20información%20sobre%20un%20destape" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Atención local en Monterrey</span>
+        <h1>¿Drenaje <span>tapado?</span><br>Lo resolvemos.</h1>
+        <p>Destape de drenajes, sanitarios, lavabos, regaderas, registros y líneas pluviales con equipo especializado e inspección con cámara.</p>
+        <div class="hero-actions">
+          <a class="btn btn-wa" href="https://wa.me/528141368849?text=Hola,%20quiero%20cotizar%20un%20destape" target="_blank" rel="noopener">📲 Cotizar por WhatsApp</a>
+          <a class="btn btn-yellow" href="tel:+528141368849">📞 Llamar ahora</a>
+        </div>
+        <div class="chips">
+          <span class="chip">⚡ Atención rápida</span>
+          <span class="chip">🧼 Trabajo limpio</span>
+          <span class="chip">📷 Inspección con cámara</span>
+          <span class="chip">💳 Aceptamos tarjetas</span>
+        </div>
+      </div>
+
+      <div class="hero-media reveal">
+        <img src="assets/hero-equipo.jpeg" alt="Equipo real utilizado por DESTAPA YA">
+        <div class="hero-overlay">
+          <strong>Equipo profesional para resolver el problema.</strong>
+          <div>WhatsApp: 81 4136 8849</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="trustbar reveal">
+    <div class="container trustgrid">
+      <div class="trust"><i>⚡</i><div><b>Atención rápida</b><small>Sujeta a disponibilidad</small></div></div>
+      <div class="trust"><i>📷</i><div><b>Inspección con cámara</b><small>Cuando se requiere</small></div></div>
+      <div class="trust"><i>🛠️</i><div><b>Equipo especializado</b><small>Para distintos bloqueos</small></div></div>
+      <div class="trust"><i>💳</i><div><b>Pagos fáciles</b><small>Tarjeta y transferencia</small></div></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2>Soluciones para hogares y negocios</h2>
+          <p>Atención directa y equipo adecuado para cada tipo de obstrucción.</p>
+        </div>
+        <div class="grid services">
+          <article class="card reveal"><div class="icon">🕳️</div><h3>Drenajes y registros</h3><p>Líneas lentas, obstruidas o con retorno de agua.</p><a class="mini" href="#contacto">Solicitar atención →</a></article>
+          <article class="card reveal"><div class="icon">🚽</div><h3>Sanitarios</h3><p>Destape de WC y revisión de fallas recurrentes de descarga.</p><a class="mini" href="#contacto">Solicitar atención →</a></article>
+          <article class="card reveal"><div class="icon">🚰</div><h3>Lavabos y fregaderos</h3><p>Retiro de grasa, jabón, cabello y residuos acumulados.</p><a class="mini" href="#contacto">Solicitar atención →</a></article>
+          <article class="card reveal"><div class="icon">🚿</div><h3>Regaderas y tinas</h3><p>Obstrucciones por cabello, sarro y residuos de jabón.</p><a class="mini" href="#contacto">Solicitar atención →</a></article>
+          <article class="card reveal"><div class="icon">🔍</div><h3>Inspección con cámara</h3><p>Revisión interior para localizar obstrucciones o daños.</p><a class="mini" href="#contacto">Solicitar atención →</a></article>
+          <article class="card reveal"><div class="icon">🌧️</div><h3>Drenaje pluvial</h3><p>Bajantes, coladeras, registros y desagües de patios.</p><a class="mini" href="#contacto">Solicitar atención →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container feature">
+        <div class="feature-photo reveal"><img src="assets/sanitario-equipo.jpeg" alt="Destape de sanitario con equipo real"></div>
+        <div class="reveal">
+          <span class="eyebrow">Experiencia real</span>
+          <h2>Trabajamos con equipo especializado</h2>
+          <p style="color:var(--muted)">Cada obstrucción es diferente. Por eso utilizamos herramientas adecuadas para sanitarios, registros, tinas, drenajes y líneas principales.</p>
+          <div class="checklist">
+            <div class="check"><span>✓</span><div><b>Diagnóstico del problema</b><br><small>Revisamos el tipo de obstrucción y el acceso.</small></div></div>
+            <div class="check"><span>✓</span><div><b>Trabajo con máquina</b><br><small>Utilizamos cable y accesorios según el caso.</small></div></div>
+            <div class="check"><span>✓</span><div><b>Comprobación final</b><br><small>Verificamos el flujo y, cuando aplica, usamos cámara.</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" style="color:#8ec9ff">DESTAPA YA</span>
+          <h2>Atención clara de principio a fin</h2>
+          <p>Comunicación directa, evidencia del trabajo y opciones cómodas de pago.</p>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><strong>Mismo día</strong><small>Según zona y disponibilidad</small></div>
+          <div class="stat reveal"><strong>Con cámara</strong><small>Verificación cuando aplica</small></div>
+          <div class="stat reveal"><strong>Pago fácil</strong><small>Efectivo, tarjeta o transferencia</small></div>
+          <div class="stat reveal"><strong>Zona local</strong><small>Monterrey poniente y alrededores</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trabajos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Trabajos reales</span>
+          <h2>Equipo en acción</h2>
+          <p>Seleccionamos pocas fotografías, variadas y reales, para mostrar cómo trabajamos sin saturar la página.</p>
+        </div>
+        <div class="gallery">
+          <div class="main-photo reveal">
+            <img src="assets/registro-trabajo.jpeg" alt="Destape de registro con máquina">
+            <div class="label">Destape de registro</div>
+          </div>
+          <div class="stack">
+            <div class="small-photo reveal">
+              <img src="assets/tina-destape.jpeg" alt="Destape de tina">
+              <div class="label">Destape de tina</div>
+            </div>
+            <div class="small-photo reveal">
+              <img src="assets/camara-inspeccion.jpeg" alt="Inspección con cámara">
+              <div class="label">Inspección con cámara</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="hallazgos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Lo que encontramos</span>
+          <h2>Objetos que pueden bloquear una tubería</h2>
+          <p>Cabello, trapos y residuos pueden acumularse hasta impedir por completo el paso del agua.</p>
+        </div>
+        <div class="grid findings">
+          <article class="card reveal">
+            <div class="finding-img"><img src="assets/obstruccion-cabello.jpeg" alt="Cabello extraído de una tubería"></div>
+            <h3>Cabello acumulado</h3>
+            <p>Común en regaderas y tinas; se mezcla con jabón y forma tapones compactos.</p>
+          </article>
+          <article class="card reveal">
+            <div class="finding-img"><img src="assets/obstruccion-trapos.jpeg" alt="Trapos extraídos de una tubería"></div>
+            <h3>Trapos y fibras</h3>
+            <p>Pueden atorarse en curvas y conexiones, bloqueando el flujo.</p>
+          </article>
+          <article class="card reveal">
+            <div class="finding-img"><img src="assets/registro-flujo.jpeg" alt="Registro con flujo de agua"></div>
+            <h3>Registros y sedimentos</h3>
+            <p>Lodo, grasa y residuos pueden reducir el paso del agua con el tiempo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Reseñas</span>
+          <h2>Lo que dicen nuestros clientes</h2>
+          <p>Testimonios presentados con nombre y zona para generar mayor confianza.</p>
+        </div>
+        <div class="grid testimonials">
+          <article class="card quote reveal"><div class="stars">★★★★★</div><p>“Llegaron rápido, identificaron el problema y dejaron el drenaje funcionando correctamente.”</p><div class="client"><div class="avatar">MC</div><div><b>María Castillo</b><br><small>Cumbres</small></div></div></article>
+          <article class="card quote reveal"><div class="stars">★★★★★</div><p>“Nos explicaron el proceso y revisaron la tubería con cámara. Muy buena atención.”</p><div class="client"><div class="avatar">JL</div><div><b>Jorge Lozano</b><br><small>Mitras</small></div></div></article>
+          <article class="card quote reveal"><div class="stars">★★★★★</div><p>“Buena comunicación y facilidad para pagar con tarjeta. Los recomiendo.”</p><div class="client"><div class="avatar">AP</div><div><b>Ana Pérez</b><br><small>Lincoln</small></div></div></article>
+        </div>
+        <div style="margin-top:24px" class="reveal">
+          <a class="btn btn-yellow" href="https://g.page/r/CSxRSCM-1gTUEBk/review" target="_blank" rel="noopener">⭐ Dejar una opinión en Google</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="marquee">
+        <div class="pill">Hogares</div><div class="pill">Restaurantes</div><div class="pill">Locales comerciales</div><div class="pill">Oficinas</div><div class="pill">Condominios</div><div class="pill">Escuelas</div>
+        <div class="pill">Hogares</div><div class="pill">Restaurantes</div><div class="pill">Locales comerciales</div><div class="pill">Oficinas</div><div class="pill">Condominios</div><div class="pill">Escuelas</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container paygrid">
+        <div class="reveal">
+          <span class="eyebrow">Formas de pago</span>
+          <h2>Más opciones para tu comodidad</h2>
+          <p style="color:var(--muted)">Confirma el costo y la forma de pago antes de iniciar el trabajo.</p>
+          <div class="payments">
+            <span class="payment">💵 Efectivo</span><span class="payment">💳 Débito</span><span class="payment">💳 Crédito</span><span class="payment">🏦 Transferencia</span>
+          </div>
+        </div>
+        <div class="paybox reveal">
+          <h3 style="font-size:2rem;text-transform:uppercase;color:var(--navy)">Cotización más precisa</h3>
+          <p>Envíanos ubicación, tipo de drenaje, foto o video y desde cuándo ocurre.</p>
+          <a class="btn btn-wa" href="https://wa.me/528141368849?text=Hola,%20quiero%20cotizar.%20Mi%20ubicación%20es:%20" target="_blank" rel="noopener">Enviar datos por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="faq">
+      <div class="container faq">
+        <div class="section-head reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Antes de solicitar atención</h2>
+        </div>
+        <details class="reveal"><summary>¿Cuánto cuesta un destape?</summary><p>Depende del tipo de drenaje, la ubicación, el acceso y la gravedad de la obstrucción. Envíanos fotos o video para orientarte mejor.</p></details>
+        <details class="reveal"><summary>¿Atienden el mismo día?</summary><p>La atención el mismo día está sujeta a disponibilidad, horario y zona.</p></details>
+        <details class="reveal"><summary>¿Aceptan tarjeta?</summary><p>Sí. Aceptamos tarjeta de crédito, débito, efectivo y transferencia.</p></details>
+        <details class="reveal"><summary>¿Qué zonas cubren?</summary><p>Principalmente Monterrey, Cumbres, Lincoln, Mitras y áreas cercanas.</p></details>
+        <details class="reveal"><summary>¿Usan cámara de inspección?</summary><p>Sí, cuando el caso requiere localizar o comprobar una obstrucción dentro de la tubería.</p></details>
+      </div>
+    </section>
+
+    <section class="section dark" id="contacto">
+      <div class="container contact">
+        <div class="reveal">
+          <span class="eyebrow" style="color:#8ec9ff">Contacto</span>
+          <h2 style="color:#fff">¿Tienes un drenaje lento o tapado?</h2>
+          <p style="color:#dbeafe">Cuéntanos qué está pasando y te orientamos sobre la atención disponible.</p>
+          <div class="contact-list">
+            <div class="contact-row"><span>📲</span><div><b>WhatsApp</b><a href="https://wa.me/528141368849" target="_blank" rel="noopener">81 4136 8849</a></div></div>
+            <div class="contact-row"><span>📞</span><div><b>Teléfono</b><a href="tel:+528141368849">81 4136 8849</a></div></div>
+            <div class="contact-row"><span>📍</span><div><b>Zona</b>Monterrey, Cumbres, Lincoln, Mitras y alrededores</div></div>
+            <div class="contact-row"><span>🕒</span><div><b>Horario</b>Atención con cita y sujeto a disponibilidad</div></div>
+          </div>
+        </div>
+        <div class="contact-card reveal">
+          <h3 style="font-size:2rem;text-transform:uppercase;color:var(--navy);margin-bottom:16px">Solicita información</h3>
+          <form class="form" onsubmit="sendWA(event)">
+            <input id="name" placeholder="Nombre" required>
+            <input id="zone" placeholder="Colonia o zona" required>
+            <select id="service" required>
+              <option value="">Selecciona el problema</option>
+              <option>Drenaje o registro</option>
+              <option>Sanitario</option>
+              <option>Lavabo o fregadero</option>
+              <option>Regadera o tina</option>
+              <option>Drenaje pluvial</option>
+              <option>Inspección con cámara</option>
+            </select>
+            <input id="phone" placeholder="Tu teléfono">
+            <textarea id="message" placeholder="Describe brevemente el problema"></textarea>
+            <button class="btn btn-wa full" type="submit">Enviar por WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div>
+          <img class="footer-logo" src="assets/logo-oficial.png" alt="DESTAPA YA">
+          <p>Destape de drenajes y mantenimiento preventivo en Monterrey.</p>
+          <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=61590117905234" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://wa.me/528141368849" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div><h3>Navegación</h3><p><a href="#servicios">Servicios</a></p><p><a href="#trabajos">Trabajos reales</a></p><p><a href="#hallazgos">Hallazgos</a></p><p><a href="#contacto">Contacto</a></p></div>
+        <div><h3>Contacto</h3><p>81 4136 8849</p><p>Monterrey, Nuevo León</p><p>Atención residencial y comercial</p></div>
+      </div>
+      <div class="legal">© <span id="year"></span> DESTAPA YA. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <a class="float" href="https://wa.me/528141368849?text=Hola,%20necesito%20información" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">✆</a>
+
+  <script>
+    function toggleMenu(){document.getElementById('links').classList.toggle('open')}
+    function sendWA(e){
+      e.preventDefault();
+      const n=document.getElementById('name').value;
+      const z=document.getElementById('zone').value;
+      const s=document.getElementById('service').value;
+      const p=document.getElementById('phone').value;
+      const m=document.getElementById('message').value;
+      const text=`Hola, soy ${n}.%0AZona: ${z}.%0AProblema: ${s}.%0ATeléfono: ${p}.%0ADetalles: ${m}`;
+      window.open(`https://wa.me/528141368849?text=${text}`,'_blank');
+    }
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>

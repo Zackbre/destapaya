@@ -1,0 +1,19 @@
+DESTAPA YA — VERSIÓN PREMIUM CON LOGO OFICIAL Y FOTOS REALES
+
+CAMBIOS REALIZADOS
+- Se utilizó el logotipo oficial de DESTAPA YA.
+- Se reemplazaron imágenes publicitarias generadas por fotografías reales.
+- Se seleccionaron imágenes variadas para evitar repetición y saturación.
+- Se agregaron secciones de trabajos reales y objetos retirados de tuberías.
+- Se mantuvieron WhatsApp, llamada, Facebook, reseña en Google y formulario.
+- La página está lista para GitHub Pages.
+
+PUBLICAR
+1. Descomprime este ZIP.
+2. Sube index.html y la carpeta assets a tu repositorio de GitHub.
+3. Ve a Settings > Pages.
+4. Selecciona Deploy from a branch > main > /root.
+5. Guarda y espera unos minutos.
+
+NOTA SOBRE RESEÑAS
+Los nombres y textos mostrados son ejemplos de diseño. Sustitúyelos por reseñas reales antes de promover la página públicamente.
