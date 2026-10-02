@@ -283,8 +283,48 @@
     color: var(--white);
     opacity: 0.9;
   }
+.phone-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
 
+.phone-top:hover {
+  color: var(--blue);
+}
 
+.phone-icon {
+  font-size: 1.05rem;
+}
+
+.whatsapp-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 18px;
+  background: #25D366;
+  color: #ffffff !important;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.whatsapp-top:hover {
+  background: #1ebe5d;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.whatsapp-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
   /* HERO */
 
   .hero {
@@ -763,19 +803,40 @@
       </a>
 
       <nav class="nav">
-        <a href="/">Inicio</a>
-        <a href="#servicio">Servicio</a>
-        <a href="#proceso">Cómo trabajamos</a>
 
-        <a
-          class="cta"
-          href="https://wa.me/528141368849"
-          target="_blank"
-          rel="noopener"
-        >
-          WhatsApp
-        </a>
-      </nav>
+  <a href="/">
+    Inicio
+  </a>
+
+  <a href="#servicio">
+    Servicio
+  </a>
+
+  <a href="#proceso">
+    Cómo trabajamos
+  </a>
+
+ 
+
+  <a
+  class="phone-top"
+  href="tel:+528141368849"
+>
+  <span class="phone-icon">☎</span>
+  81 4136 8849
+</a>
+
+<a
+  class="whatsapp-top"
+  href="https://wa.me/528141368849"
+  target="_blank"
+  rel="noopener"
+>
+  <span class="whatsapp-icon">☏</span>
+  WhatsApp
+</a>
+
+</nav>
 
     </div>
   </header>
@@ -1328,7 +1389,7 @@
 
           <img
             class="footer-logo"
-            src="/confianza/logo-destapa-ya-header.png"
+         src="/confianza/logo-destapa-ya.png"
             alt="DESTAPA YA"
           />
 
